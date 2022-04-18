@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    /*Colores*/
+    --white: #ffffff;
+    --blue: #102341;
+    --hover: #B17506;
+    --subtitulo: #C6C6C6;
+    --titulo: #ffffff;
+    --black:#000;
+    /*Fuentes*/
+    --montserrat: 'Montserrat', sans-serif;
+
+}
+
+body{
+    background-color: var(--white);
+}
+
+.header{
+    width: 100%;
+    height: 705px;
+    background-image: url(../img/fotos/masculinos/fondo_masculino.jpg);
+    background-size: cover;
+}
+
+.header__content{
+    width: 100%;
+    height: 705px;
+    background-color: rgba(36, 83, 189 ,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+
+/*Menu*/
+.menu{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 140px;
+    background-color: rgba(16, 35, 65 , 0.8)
+}
+
+/*menu Items*/
+.menu__items{
+    width: 60%;
+}
+
+.menu__items--items{
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    font-size: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+
+.menu__link{
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: var(--white);
+}
+
+.menu__link:hover{
+    color: var(--hover);
+}
+
+/*Social Media*/
+.social__media{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.social__link img{
+    width: 40px;
+}
+/*Slogan*/
+.slogan{
+    text-align: center;
+}
+
+.titulo{
+    color: var(--titulo);
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.subtitulo{
+    color: var(--white);
+    font-size: 30px;
+}
+
+/*buttons*/
+.header__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.header__button{
+    width: 140px;
+    padding: 10px;
+    background:none;
+    border: 2px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+}
+
+.header__button--about{
+    background-color: #D57700;
+    border: 0px;
+}
+
+.header__button:hover{
+    background-color: #007FAA;
+    border: 0px;
+    color: #ffF;
+}
+
+/*proximo partido*/
+.title{
+    font-weight: 600;
+    margin: 0;
+    color: var(--black);
+}
+
+.separador__title{
+    margin: 0;
+    width: 150px;
+    margin: 30px auto;
+    border-top: 3px solid var(--black);
+    background: #fff;
+}
+.proximo__partido{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    background-image: url(../img/fondo/textura_pared.png);
+    padding: 40px;
+    
+}
+
+.proximo__partido--content{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.teams{
+    width: 200px;
+}
+
+.vs{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: var(--montserrat);
+    color: var(--black);
+}
+.main{
+    background-image: url(../img/fotos/futuro%20felino/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Competencias*/
+.competencia__title{
+    background-color: rgba(36, 83, 189 ,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    padding-top: 40px;
+    width: 100%;
+    height: 300px;
+}
+
+.competencia__title h2{
+    font-size: 40px;
+    color: var(--white);
+}
+.competencia__logo{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+}
+.competencia__logo--img{
+    width: 200px;
+}
+
+/*Resumen Historia*/
+.historia{
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.historia__content{
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.historia__descripcion{
+    width: 50%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.historia__title{
+    color: var(--hover);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.historia__text{
+    text-align: justify;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.historia__link{
+    background-color: #2D62DA;
+    padding: 15px;
+    color: var(--white);
+    text-decoration: none;
+    width: 230px;
+    text-align: center;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.historia__link:hover{
+    color: var(--white);
+    background-color: var(--hover);
+}
