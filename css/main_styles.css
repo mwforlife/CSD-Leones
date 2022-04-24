@@ -176,15 +176,18 @@ body{
     background-attachment: fixed;
 }
 /*Competencias*/
+
 .competencia__title{
     background-color: rgba(36, 83, 189 ,0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4em;
+    flex-wrap: wrap;
     padding-top: 40px;
     width: 100%;
     height: 300px;
+    height: auto;
 }
 
 .competencia__title h2{
@@ -223,7 +226,7 @@ body{
 }
 .historia__title{
     color: var(--hover);
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
 }
 
@@ -248,3 +251,116 @@ body{
     color: var(--white);
     background-color: var(--hover);
 }
+/*Proyecto*/
+.proyecto{
+    background-image: url(../img/fotos/leones%20de%20barrio/Villa%20Los%20Andes/fondo_proyecto.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.proyecto__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(9, 107, 160, 0.56);
+}
+.button__proyecto{
+    width: 80px;
+    height: 80px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 58, 58);
+}
+
+.button__proyecto img{
+    width:64px;
+}
+
+.proyecto__titulo{
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}
+
+.proyecto__subtitulo{
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+/*Noticias*/
+.noticias{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.noticias__titulo{
+    font-size: 42px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.noticias__button{
+    width: 100px;
+    height: 30px;
+    background-color: var(--hover);
+    color: white;
+    border: none;
+    align-self: flex-end;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias__button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.noticias__content{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3em;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.noticias__item{
+    width: 30%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.card-title{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.noticias__text{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    height: 110px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.noticias__img{
+    width: 360px;
+    height: 238px;
+}
+
+/*Sponsor*/
